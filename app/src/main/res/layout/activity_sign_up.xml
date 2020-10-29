@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bk1"
+    tools:context=".SignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your Personal Details"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/editFName"
+                android:layout_below="@id/tv"
+                android:layout_marginTop="10dp"
+                android:hint="Enter your First Name"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editMName"
+                android:layout_below="@id/editFName"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Middle Name"
+                android:textColorHint="@color/text"
+                android:textColor="@color/text"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editLName"
+                android:layout_below="@id/editMName"
+                android:layout_marginTop="10dp"
+                android:hint="Enter your Last Name"
+                android:textColorHint="@color/text"
+                android:textColor="@color/text"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editAdd"
+                android:layout_below="@id/editLName"
+                android:layout_marginTop="10dp"
+                android:hint=" Enter your Residential Address "
+                android:textColorHint="@color/text"
+                android:textColor="@color/text"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editAadhar"
+                android:layout_below="@id/editAdd"
+                android:layout_marginTop="10dp"
+                android:hint="Enter your 12 digits aadhar number"
+                android:textColorHint="@color/text"
+                android:textColor="@color/text"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_below="@id/editAadhar"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Phone Number"
+                android:textColorHint="@color/text"
+                android:textColor="@color/text"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/gen"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@id/editGender"
+                android:layout_below="@id/editPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="@color/text"
+                />
+
+            <Spinner
+                android:id="@+id/editGender"
+                android:layout_below="@id/editPhone"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="100dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/gender"
+                android:textColor="@color/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_below="@id/editGender"
+                android:layout_marginTop="10dp"
+                android:hint="Enter your Age"
+                android:textColorHint="@color/text"
+                android:textColor="@color/text"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/SignUp"
+                android:layout_below="@id/editAge"
+                android:layout_marginTop="5dp"
+                android:text="Proceed to Document Upload "
+                android:textSize="15dp"
+                android:background="@drawable/bshape"
+                android:textColor="@color/colorPrimaryDark"
+                android:drawableRight="@drawable/ic_img_upload"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_below="@id/SignUp"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Already registered ? click here to Log In"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

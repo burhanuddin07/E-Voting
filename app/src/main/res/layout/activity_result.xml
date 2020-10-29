@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    tools:context=".Result">
+
+    <TextView
+        android:id="@+id/tap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chart"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="Tap Here"
+        android:padding="15sp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/chart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

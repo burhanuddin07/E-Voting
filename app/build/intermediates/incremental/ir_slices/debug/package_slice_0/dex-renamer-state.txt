@@ -1,0 +1,4 @@
+#Tue Apr 16 19:56:40 IST 2019
+base.0=C\:\\Users\\Hussain\\AndroidStudioProjects\\EVoting\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

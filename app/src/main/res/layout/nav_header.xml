@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:corner_radius="50sp"
+        >
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            />
+
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+    <TextView
+        android:id="@+id/Uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="E-voting"
+        android:textSize="30sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+</LinearLayout>

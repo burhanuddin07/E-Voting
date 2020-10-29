@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view">
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_result"
+                android:icon="@drawable/ic_result"
+                android:title="Results" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </group>
+
+    <item android:title="Voting Status">
+        <menu>
+            <item
+                android:id="@+id/nav_begin"
+                android:title="Begin Voting" />
+            <item
+                android:id="@+id/nav_end"
+                android:title="End Voting" />
+        </menu>
+    </item>
+
+</menu>

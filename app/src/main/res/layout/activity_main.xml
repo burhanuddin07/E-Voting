@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        app:corner_radius="100sp" >
+
+    <ImageView
+        android:src="@drawable/evote2"
+        android:layout_margin="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Not a Registered User ? Sign Up here"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/toAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20sp"
+        android:text="Login as admin"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/editUID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:drawableLeft="@drawable/ic_person"
+            android:hint=" Enter your Aadhaar Card No"
+            android:inputType="number"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:drawableLeft="@drawable/ic_phone"
+            android:ems="10"
+            android:hint=" Enter phone"
+            android:inputType="phone"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text" />
+
+        <Button
+            android:id="@+id/buttonGetVerificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bshape"
+            android:text="Get Verification Code"
+            android:textAllCaps="false"
+            android:textColor="@color/text" />
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:drawableLeft="@drawable/ic_lock"
+            android:hint=" Enter code received"
+            android:inputType="numberPassword"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text" />
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bshape"
+            android:text="Sign In"
+            android:textColor="@color/text" />
+    </LinearLayout>
+
+</RelativeLayout>

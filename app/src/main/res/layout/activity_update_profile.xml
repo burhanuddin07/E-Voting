@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back5"
+    android:padding="10sp"
+    tools:context=".UpdateProfile">
+
+    <TextView
+        android:text="Tap on the Camera to select a Profile Image"
+        android:textSize="20sp"
+        android:padding="15sp"
+        android:background="@drawable/shape"
+        android:textColor="@color/text"
+        android:textAlignment="center"
+        android:typeface="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/prof_img"
+        android:src="@drawable/ic_camera"
+        android:layout_margin="15sp"
+        android:layout_gravity="center"
+        android:layout_width="150sp"
+        android:layout_height="150sp" />
+
+    <Button
+        android:id="@+id/prof_upload"
+        android:background="@drawable/bshape"
+        android:padding="15sp"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        android:layout_gravity="center"
+        android:text="Set Profile Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

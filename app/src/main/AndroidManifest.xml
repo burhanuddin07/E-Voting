@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.husain.e_voting"
+    android:versionCode="01"
+    android:versionName="0.1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Launcher" android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".SignUp" />
+        <activity
+            android:name=".Profile" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DocUpload" />
+        <activity android:name=".Voting" />
+        <activity android:name=".Fingerprint" />
+        <activity android:name=".Result" />
+        <activity
+            android:name=".AdminSide"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".AdminResult" />
+        <activity android:name=".UpdateProfile" />
+    </application>
+
+</manifest>

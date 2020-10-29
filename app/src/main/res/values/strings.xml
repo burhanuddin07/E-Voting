@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">E-Voting</string>
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_adminlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk1"
+    android:fitsSystemWindows="true"
+    tools:context=".AdminSide"
+    tools:openDrawer="strt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="20sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="90sp"
+                        android:layout_height="90sp"
+                        android:layout_margin="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_person_add" />
+
+                    <TextView
+                        android:text="User Verification"
+                        android:textColor="@color/text"
+                        android:textSize="35sp"
+                        android:layout_margin="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:padding="30sp"
+                    app:corner_radius="50sp">
+
+                    <EditText
+                        android:id="@+id/Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15sp"
+                        android:drawableLeft="@drawable/ic_face"
+                        android:hint=" Full Name"
+                        android:inputType="textPersonName"
+                        android:padding="15sp"
+                        android:textColor="@color/text"
+                        android:textColorHint="@color/text"
+                        android:textSize="20sp"
+                        android:typeface="monospace" />
+
+                    <EditText
+                        android:id="@+id/phoneNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15sp"
+                        android:digits="0123456789"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:hint=" Phone Number"
+                        android:inputType="phone"
+                        android:padding="15sp"
+                        android:textColor="@color/text"
+                        android:textColorHint="@color/text"
+                        android:textSize="20sp"
+                        android:typeface="monospace" />
+
+                    <EditText
+                        android:id="@+id/aadhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15sp"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:hint=" Aadhaar Card Number"
+                        android:inputType="number"
+                        android:padding="15sp"
+                        android:textColor="@color/text"
+                        android:textColorHint="@color/text"
+                        android:textSize="20sp"
+                        android:typeface="monospace" />
+
+                    <Button
+                        android:id="@+id/toAuthenticate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:background="@drawable/bshape"
+                        android:drawableStart="@drawable/ic_verified"
+                        android:gravity="start"
+                        android:padding="10sp"
+                        android:text=" Authenticate "
+                        android:textColor="@color/text"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_adminview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_adminheader"
+        app:menu="@menu/drawer_adminmenu" />
+
+</android.support.v4.widget.DrawerLayout>

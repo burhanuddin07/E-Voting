@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="stat"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="Welcome"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:textSize="25dp"
+                android:typeface="serif"
+                android:layout_margin="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                app:corner_radius="100sp" >
+
+            <ImageView
+                android:id="@+id/prof"
+                android:src="@drawable/face"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150sp"
+                android:layout_height="150sp" />
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <RelativeLayout
+                android:layout_margin="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Uname"
+                    android:layout_marginTop="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="User : "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:padding="10sp"
+                    android:background="@drawable/shape"
+                    android:typeface="serif"
+                    android:layout_marginBottom="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/AAD"
+                    android:layout_below="@id/Uname"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Aadhar : "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:padding="10sp"
+                    android:background="@drawable/shape"
+                    android:typeface="serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/toVote"
+                android:layout_gravity="center_horizontal"
+                android:text="VOTE "
+                android:padding="10sp"
+                android:textColor="@color/text"
+                android:background="@drawable/bshape"
+                android:drawableRight="@drawable/ic_vote"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_margin="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    tools:context=".Voting">
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="1"
+        android:id="@+id/radioGroup" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:onClick="select"
+            android:text=" Indian National Congress"
+            android:textStyle="bold"
+            android:id="@+id/Congress"
+            android:drawableLeft="@mipmap/cong"
+            android:checked="false"
+            android:textSize="25dp"
+            android:textColor="@color/text"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:onClick="select"
+            android:text=" Bhartiya Janta party"
+            android:textStyle="bold"
+            android:id="@+id/BJP"
+            android:drawableLeft="@mipmap/bjp"
+            android:checked="false"
+            android:textSize="25dp"
+            android:textColor="@color/text"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:onClick="select"
+            android:text=" Bahujan Samaj Party"
+            android:textStyle="bold"
+            android:id="@+id/BSP"
+            android:drawableLeft="@mipmap/bsp"
+            android:checked="false"
+            android:textSize="25dp"
+            android:textColor="@color/text"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:onClick="select"
+            android:text=" Aam Aadmi Party"
+            android:textStyle="bold"
+            android:id="@+id/AAP"
+            android:drawableLeft="@mipmap/aap"
+            android:checked="false"
+            android:textSize="25dp"
+            android:textColor="@color/text"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="You're Voting : "
+            android:id="@+id/party"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:typeface="monospace"
+            android:padding="15sp"
+            android:background="@drawable/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vote"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:text="Cast your vote"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="15dp"
+        android:background="@drawable/bshape"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
